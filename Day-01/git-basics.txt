@@ -1,1 +1,4 @@
 Git is a version control system.
+Git tracks changes.
+A repository stores project history.
+GitHub hosts Git repositories online.
