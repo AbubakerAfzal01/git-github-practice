@@ -1,4 +1,1292 @@
-Git is a version control system.
-Git tracks changes.
-A repository stores project history.
-GitHub hosts Git repositories online.
+
+                    GIT & GITHUB COURSE
+                         DAY 01
+                GIT BASICS & FIRST WORKFLOW
+
+
+TABLE OF CONTENTS
+
+
+1. What is Version Control?
+2. What is Git?
+3. What is GitHub?
+4. Git vs GitHub
+5. Important Git Terminology
+6. Git Installation & Verification
+7. Git Configuration
+8. Creating a Git Repository
+9. Working Directory
+10. Git Status
+11. Staging Area
+12. Git Add
+13. Git Commit
+14. Git Log
+15. Local Repository
+16. GitHub Repository
+17. Remote Repository
+18. Git Remote
+19. Connecting Local Git to GitHub
+20. Git Push
+21. Git Pull
+22. Git Clone
+23. Basic Branch Introduction
+24. .gitignore Introduction
+25. Complete Git Workflow
+26. Practical Work Completed in Day 01
+27. Common Mistakes
+28. Important Commands Cheat Sheet
+29. Day 01 Summary
+
+
+
+1. WHAT IS VERSION CONTROL?
+
+
+Version Control is a system used to track changes made to
+files and projects over time.
+
+It allows developers to:
+
+- Track changes
+- Save different versions of a project
+- See what was changed
+- Know when changes were made
+- Know who made changes
+- Restore previous versions
+- Work safely on projects
+- Collaborate with other developers
+
+Without version control, developers may create files like:
+
+project
+project-final
+project-final-2
+project-final-real
+project-final-real-last
+
+Git solves this problem by keeping a proper history of
+changes.
+
+
+
+2. WHAT IS GIT?
+
+
+Git is a Distributed Version Control System (DVCS).
+
+Git is installed and used on the local computer.
+
+It tracks changes in a project and stores the history of
+those changes.
+
+Git allows us to:
+
+- Create repositories
+- Track files
+- Stage changes
+- Create commits
+- View history
+- Create branches
+- Merge branches
+- Undo changes
+- Connect with remote repositories
+- Push and pull changes
+
+
+Simple definition:
+
+Git = A tool for tracking and managing changes in projects.
+
+
+
+3. WHAT IS GITHUB?
+
+
+GitHub is an online platform for hosting Git repositories.
+
+Git works locally on the computer, while GitHub provides an
+online place where repositories can be stored and shared.
+
+GitHub is commonly used for:
+
+- Hosting projects
+- Sharing source code
+- Collaboration
+- Pull Requests
+- Issues
+- Code Reviews
+- Open Source projects
+- GitHub Actions
+- Project management
+
+
+Simple definition:
+
+GitHub = An online platform built around Git repositories.
+
+
+
+4. GIT VS GITHUB
+
+
+Git:
+
+- Version Control System
+- Runs locally
+- Tracks project history
+- Manages commits and branches
+- Can work without GitHub
+
+GitHub:
+
+- Online platform
+- Hosts Git repositories
+- Provides collaboration features
+- Allows developers to share projects
+- Provides Pull Requests, Issues, Actions, etc.
+
+
+Simple comparison:
+
+Git      -> Version Control
+GitHub   -> Online Git Repository Hosting & Collaboration
+
+
+5. IMPORTANT GIT TERMINOLOGY
+
+Repository:
+A project tracked by Git.
+
+Local Repository:
+The Git repository stored on your computer.
+
+Remote Repository:
+A repository stored on a remote server such as GitHub.
+
+Working Directory:
+The files and folders you are currently working on.
+
+Staging Area:
+The area where changes are prepared before committing.
+
+Commit:
+A saved snapshot of changes in Git history.
+
+Branch:
+An independent line of development.
+
+Remote:
+A connection/reference to another repository.
+
+Origin:
+The conventional name given to the main remote repository.
+
+Main:
+The commonly used default branch name.
+
+Clone:
+Copying an existing remote repository to your computer.
+
+Push:
+Sending local commits to a remote repository.
+
+Pull:
+Getting changes from a remote repository and integrating
+them into the local repository.
+
+
+
+6. GIT INSTALLATION & VERIFICATION
+
+
+To check whether Git is installed:
+
+Command:
+
+git --version
+
+Example output:
+
+git version 2. 24.27
+
+If Git is installed correctly, the version number will be
+displayed.
+
+
+
+7. GIT CONFIGURATION
+
+
+Git should know the user's name and email.
+
+Set username:
+
+git config --global user.name "Your Name"
+
+Set email:
+
+git config --global user.email "your-email@example.com"
+
+
+Check username:
+
+git config --global user.name
+
+Check email:
+
+git config --global user.email
+
+
+List all Git configuration:
+
+git config --list
+
+
+The --global option means the configuration applies to the
+user globally on the computer.
+
+
+============================================================
+8. CREATING A GIT REPOSITORY
+============================================================
+
+To create a new project folder:
+
+mkdir project-name
+
+Move into the folder:
+
+cd project-name
+
+Initialize Git:
+
+git init
+
+
+git init creates a Git repository in the current folder.
+
+It creates a hidden .git directory.
+
+The .git directory contains Git's internal information,
+including repository history and configuration.
+
+
+Important:
+
+Do not manually delete or modify the .git directory unless
+you understand the consequences.
+
+
+
+9. WORKING DIRECTORY
+
+
+The Working Directory is the actual project files and
+folders where we work.
+
+Example:
+
+git-github-practice/
+    Day-01/
+        git-basics.txt
+
+
+When we modify git-basics.txt, Git detects that the file
+has changed.
+
+
+Basic flow:
+
+Working Directory
+        |
+        | git add
+        v
+Staging Area
+        |
+        | git commit
+        v
+Local Repository
+
+
+
+10. GIT STATUS
+
+
+Command:
+
+git status
+
+
+git status shows the current state of the repository.
+
+It can show:
+
+- Current branch
+- Modified files
+- Untracked files
+- Staged files
+- Uncommitted changes
+- Clean working tree
+
+
+Example:
+
+git status
+
+
+Possible result:
+
+On branch main
+
+Changes not staged for commit:
+    modified: Day-01/git-basics.txt
+
+
+If everything is committed:
+
+On branch main
+nothing to commit, working tree clean
+
+
+git status is one of the most important Git commands.
+
+
+
+11. STAGING AREA
+
+
+The Staging Area is an intermediate area between the Working
+Directory and the Local Repository.
+
+The purpose of staging is to select exactly which changes
+should be included in the next commit.
+
+
+Workflow:
+
+Working Directory
+        |
+        | git add
+        v
+Staging Area
+        |
+        | git commit
+        v
+Local Repository
+
+
+Example:
+
+If a project contains:
+
+index.html
+style.css
+script.js
+
+and only index.html should be included in the next commit,
+we can stage only that file.
+
+
+
+12. GIT ADD
+
+
+The git add command moves changes to the Staging Area.
+
+
+Add a specific file:
+
+git add filename
+
+
+Example:
+
+git add Day-01/git-basics.txt
+
+
+Add multiple files:
+
+git add file1 file2
+
+
+Add all changes:
+
+git add .
+
+
+Check staged changes:
+
+git status
+
+
+Important:
+
+git add does NOT create a commit.
+
+It only prepares the changes for a commit.
+
+
+To remove a file from staging:
+
+git restore --staged filename
+
+
+Example:
+
+git restore --staged Day-01/git-basics.txt
+
+
+
+13. GIT COMMIT
+
+
+A commit saves staged changes into Git's local history.
+
+Command:
+
+git commit -m "Commit message"
+
+
+Example:
+
+git commit -m "Update Git basics notes"
+
+
+The -m option allows us to provide a commit message.
+
+
+A good commit message should describe what changed.
+
+Good examples:
+
+git commit -m "Add Git basics notes"
+
+git commit -m "Create Day 01 documentation"
+
+git commit -m "Update project README"
+
+
+Bad examples:
+
+git commit -m "stuff"
+
+git commit -m "changes"
+
+git commit -m "asdf"
+
+
+Important:
+
+git commit works with staged changes.
+
+Workflow:
+
+git add
+    |
+    v
+Staging Area
+    |
+    v
+git commit
+    |
+    v
+Local Git History
+
+
+14. GIT LOG
+
+
+git log displays commit history.
+
+Command:
+
+git log
+
+
+For a shorter version:
+
+git log --oneline
+
+
+Example:
+
+fe6781f Update Git basics notes
+abc1234 Initial commit
+
+
+Each commit has a unique identifier called a commit hash.
+
+The short version of a commit hash is often displayed in
+commands such as:
+
+git log --oneline
+
+
+15. LOCAL REPOSITORY
+
+
+The Local Repository is the Git repository stored on the
+computer.
+
+It contains the project's Git history.
+
+Example:
+
+Computer
+    |
+    └── git-github-practice
+            |
+            ├── Day-01
+            |
+            └── .git
+
+
+Commits are stored in the local Git repository before they
+are pushed to GitHub.
+
+
+
+16. GITHUB REPOSITORY
+
+
+A GitHub Repository is the online version of a Git repository
+hosted on GitHub.
+
+Example:
+
+GitHub Account:
+AbubakerAfzal01
+
+Repository:
+
+git-github-practice
+
+
+The local repository and GitHub repository can be connected
+together.
+
+
+
+17. REMOTE REPOSITORY
+
+
+A Remote Repository is another repository that is accessible
+from the local repository.
+
+GitHub repositories are commonly used as remote repositories.
+
+Example:
+
+Local Repository
+        |
+        | Internet
+        v
+GitHub Remote Repository
+
+
+A remote allows us to push and pull changes.
+
+
+
+18. GIT REMOTE
+
+
+To add a remote repository:
+
+git remote add origin URL
+
+
+Example:
+
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+
+
+"origin" is the conventional name for the main remote.
+
+
+To view remote repositories:
+
+git remote -v
+
+
+Example output:
+
+origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
+origin  https://github.com/USERNAME/REPOSITORY.git (push)
+
+
+To remove a remote:
+
+git remote remove origin
+
+
+Important:
+
+Git commands normally start with:
+
+git
+
+For example:
+
+git status
+git add
+git commit
+git push
+git pull
+
+Not:
+
+status
+add
+commit
+push
+
+
+
+19. CONNECTING LOCAL GIT TO GITHUB
+
+
+First create a repository on GitHub.
+
+Then connect the local repository:
+
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+
+
+Check connection:
+
+git remote -v
+
+
+Example:
+
+origin  https://github.com/AbubakerAfzal01/git-github-practice.git
+(fetch)
+
+origin  https://github.com/AbubakerAfzal01/git-github-practice.git
+(push)
+
+
+This confirms that the local repository knows where the
+remote GitHub repository is located.
+
+
+
+20. GIT PUSH
+
+
+git push sends local commits to a remote repository.
+
+First push:
+
+git push -u origin main
+
+
+Meaning:
+
+git push
+    -> Send commits
+
+-u
+    -> Set upstream tracking
+
+origin
+    -> Remote repository name
+
+main
+    -> Branch name
+
+
+After the upstream is configured, we can usually use:
+
+git push
+
+
+Example workflow:
+
+git add .
+git commit -m "Update project"
+git push
+
+
+
+21. GIT PULL
+
+
+git pull gets changes from the remote repository and
+integrates them into the local repository.
+
+Command:
+
+git pull
+
+
+Typical workflow:
+
+GitHub
+   |
+   | git pull
+   v
+Local Repository
+
+
+When working with a team, pulling regularly helps keep the
+local project updated.
+
+
+22. GIT CLONE
+
+
+git clone is used to copy an existing remote repository to
+the local computer.
+
+Command:
+
+git clone URL
+
+
+Example:
+
+git clone https://github.com/USERNAME/REPOSITORY.git
+
+
+Difference:
+
+git init:
+
+Creates a new Git repository from an existing local project.
+
+git clone:
+
+Copies an existing remote repository to the local computer.
+
+
+Simple comparison:
+
+git init  -> Local Project -> Git Repository
+
+git clone -> Remote Repository -> Local Copy
+
+
+23. BASIC BRANCH INTRODUCTION
+
+
+A branch is an independent line of development.
+
+The default branch is commonly called:
+
+main
+
+
+To view branches:
+
+git branch
+
+
+To create a branch:
+
+git branch feature-name
+
+
+To switch to a branch:
+
+git switch feature-name
+
+
+To create and switch to a new branch:
+
+git switch -c feature-name
+
+
+Detailed branching and merging will be covered in a later
+lesson.
+
+
+
+24. .GITIGNORE INTRODUCTION
+
+
+.gitignore tells Git which files or folders should not be
+tracked.
+
+Example:
+
+node_modules/
+.env
+*.log
+
+
+Common files that should not be committed may include:
+
+- Environment variables
+- Passwords
+- API keys
+- Dependencies
+- Temporary files
+- Build files
+- Log files
+
+
+Important:
+
+Never put passwords, API keys, tokens, or other secrets into
+a GitHub repository.
+
+
+25. COMPLETE GIT WORKFLOW
+
+The basic Git workflow is:
+
+1. Create or modify files
+2. Check status
+3. Stage changes
+4. Commit changes
+5. Connect remote
+6. Push changes to GitHub
+
+
+Complete example:
+
+git status
+
+git add .
+
+git status
+
+git commit -m "Update project"
+
+git remote -v
+
+git push -u origin main
+
+
+After the first push:
+
+git push
+
+
+Visual workflow:
+
+                    LOCAL COMPUTER
+
+                  Working Directory
+                         |
+                         | git add
+                         v
+                    Staging Area
+                         |
+                         | git commit
+                         v
+                  Local Repository
+                         |
+                         | git push
+                         v
+
+                     GITHUB
+                  Remote Repository
+
+                         |
+                         | git pull
+                         v
+
+                  Local Repository
+
+
+
+26. PRACTICAL WORK COMPLETED IN DAY 01
+
+
+Project:
+
+git-github-practice
+
+
+Folder structure:
+
+git-github-practice/
+    |
+    └── Day-01/
+            |
+            └── git-basics.txt
+
+
+Practical tasks completed:
+
+[1] Opened Git Bash.
+
+[2] Navigated to the Desktop.
+
+[3] Entered the Git practice project:
+
+cd git-github-practice
+
+
+[4] Checked project contents:
+
+ls
+
+
+[5] Confirmed the Git repository and main branch.
+
+[6] Checked repository status:
+
+git status
+
+
+[7] Found a modified file:
+
+Day-01/git-basics.txt
+
+
+[8] Added the GitHub remote:
+
+git remote add origin https://github.com/AbubakerAfzal01/git-github-practice.git
+
+
+[9] Verified the remote:
+
+git remote -v
+
+
+[10] Staged the modified file:
+
+git add Day-01/git-basics.txt
+
+
+[11] Checked the staging area:
+
+git status
+
+
+[12] Created a commit:
+
+git commit -m "Upadate Git basics notes"
+
+
+[13] Verified the working tree:
+
+git status
+
+
+Result:
+
+nothing to commit, working tree clean
+
+
+[14] Authenticated GitHub using Git Credential Manager.
+
+[15] Pushed the main branch to GitHub:
+
+git push -u origin main
+
+
+[16] Successfully connected the local main branch with
+the remote origin/main branch.
+
+
+Final result:
+
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+
+
+27. COMMON MISTAKES
+
+
+Mistake 1:
+
+Typing:
+
+remote add origin URL
+
+
+Correct:
+
+git remote add origin URL
+
+
+Reason:
+
+Git commands require the "git" command at the beginning.
+
+
+------------------------------------------------------------
+
+Mistake 2:
+
+Typing:
+
+status
+
+
+Correct:
+
+git status
+
+
+Reason:
+
+status by itself is not a Bash command.
+
+
+------------------------------------------------------------
+
+Mistake 3:
+
+Typing:
+
+git commit m "message"
+
+
+Correct:
+
+git commit -m "message"
+
+
+Reason:
+
+The -m option requires the hyphen.
+
+
+------------------------------------------------------------
+
+Mistake 4:
+
+Accidentally pasting an extra/hidden character before "git".
+
+Example:
+
+$ git commit...
+
+
+This can produce an error such as:
+
+bash: $'\302\226git': command not found
+
+
+Solution:
+
+Type or paste the command again without the extra character.
+
+
+------------------------------------------------------------
+
+Mistake 5:
+
+Typing a file path directly into Git Bash:
+
+Day-01/git-basics.txt
+
+
+This may cause Bash to try to execute the file.
+
+If the purpose is to stage the file, use:
+
+git add Day-01/git-basics.txt
+
+
+------------------------------------------------------------
+
+Mistake 6:
+
+Running:
+
+cd desktop
+
+while already inside:
+
+~/desktop
+
+
+This results in:
+
+bash: cd: desktop: No such file or directory
+
+
+If already inside Desktop, simply use:
+
+ls
+
+or move into another folder:
+
+cd git-github-practice
+
+
+
+28. IMPORTANT COMMANDS CHEAT SHEET
+
+
+Check Git version:
+
+git --version
+
+
+Configure username:
+
+git config --global user.name "Your Name"
+
+
+Configure email:
+
+git config --global user.email "your-email@example.com"
+
+
+Create repository:
+
+git init
+
+
+Check status:
+
+git status
+
+
+Stage one file:
+
+git add filename
+
+
+Stage all changes:
+
+git add .
+
+
+Unstage file:
+
+git restore --staged filename
+
+
+Commit:
+
+git commit -m "message"
+
+
+View commit history:
+
+git log
+
+
+View short history:
+
+git log --oneline
+
+
+Add remote:
+
+git remote add origin URL
+
+
+View remotes:
+
+git remote -v
+
+
+Remove remote:
+
+git remote remove origin
+
+
+Push:
+
+git push
+
+
+First push:
+
+git push -u origin main
+
+
+Pull:
+
+git pull
+
+
+Clone:
+
+git clone URL
+
+
+View branches:
+
+git branch
+
+
+Create branch:
+
+git branch branch-name
+
+
+Switch branch:
+
+git switch branch-name
+
+
+Create and switch:
+
+git switch -c branch-name
+
+
+============================================================
+29. DAY 01 SUMMARY
+============================================================
+
+Today I learned the fundamentals of Git and GitHub.
+
+Main concepts learned:
+
+- Version Control
+- Git
+- GitHub
+- Git vs GitHub
+- Repository
+- Local Repository
+- Remote Repository
+- Working Directory
+- Staging Area
+- Commit
+- Branch
+- Origin
+- Main branch
+- Push
+- Pull
+- Clone
+- .gitignore
+
+
+Main commands practiced:
+
+git --version
+git config
+git init
+git status
+git add
+git commit
+git log
+git remote
+git remote -v
+git push
+git pull
+git clone
+git branch
+git switch
+
+
+Most important workflow:
+
+Working Directory
+       |
+       | git add
+       v
+Staging Area
+       |
+       | git commit
+       v
+Local Repository
+       |
+       | git push
+       v
+GitHub
+
+
+DAY 01 COMPLETED SUCCESSFULLY
