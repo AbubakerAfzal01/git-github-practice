@@ -1,0 +1,44 @@
+DAY 02 - GIT HISTORY & DIFF
+
+1. git log
+   Displays the full commit history of the repository - shows each
+   commit's unique ID, author name, date, and message. This is how
+   you look back at everything that has been saved so far.
+
+   Example output I saw:
+   commit c98b324... (HEAD -> main)
+   Author: Abubaker Afzal <email>
+   Date: ...
+       update test.txt with second line
+
+2. git log --oneline
+   Same history, but compressed into one line per commit (short ID
+   + message only). Useful once a project has many commits and you
+   just need a quick scan instead of full details.
+
+3. git diff
+   Shows unstaged changes - lines removed are marked in red (-),
+   lines added are marked in green (+). Once a file is staged with
+   git add, plain git diff shows nothing for that file anymore.
+
+4. git diff --staged
+   Shows changes that have already been staged with git add - this
+   is the final preview of exactly what will go into the next
+   commit.
+
+5. git show
+   Shows full detail of one specific commit (by its ID) - useful
+   for looking back at exactly what changed in an older commit,
+   not just the latest one.
+
+6. A mistake I made today:
+   I ran "git add" without specifying a file name. Git responded
+   with "Nothing specified, nothing added" and suggested using
+   "git add ." to add everything. Instead, I fixed it by typing
+   the exact file name: "git add test.txt". This taught me that
+   git add needs to know exactly which file to stage.
+
+SUMMARY
+Day 02 covered how to review project history (git log) and how to
+inspect exact changes before (git diff) and after staging
+(git diff --staged) a commit.
