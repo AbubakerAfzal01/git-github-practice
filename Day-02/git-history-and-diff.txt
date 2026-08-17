@@ -25,6 +25,7 @@ DAY 02 - GIT HISTORY & DIFF
    Shows changes that have already been staged with git add - this
    is the final preview of exactly what will go into the next
    commit.
+   Practiced git log --oneline again and again for remembrance.
 
 5. git show
    Shows full detail of one specific commit (by its ID) - useful
