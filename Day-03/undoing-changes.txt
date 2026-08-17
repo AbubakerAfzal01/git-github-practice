@@ -1,0 +1,25 @@
+DAY 03 - UNDOING CHANGES
+
+1. What git restore does:
+git restore is used to undo changes made to a file and restore it to the last committed version.
+
+2. What git restore --staged does:
+git restore --staged removes a file from the staging area but keeps the changes in the working directory.
+
+3. Difference between the two:
+git restore <file> = removes working directory changes.
+git restore --staged <file> = unstages the file but keeps the changes.
+
+4. What I tried today:
+I modified a file, staged it, unstaged it, and then restored the file to its previous committed state.
+
+5. Commands practiced today:
+git status
+git add
+git restore
+git restore --staged
+git commit
+git push
+git log --oneline
+cat
+notepad
