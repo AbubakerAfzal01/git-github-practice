@@ -20,7 +20,7 @@ This repository documents the concepts, commands, experiments, and progress comp
 | 01 | Git Fundamentals | Completed |
 | 02 | Git History & Diff | Completed |
 | 03 | Undoing Changes | Completed |
-| 04 | Git Branches | Pending |
+| 04 | Git Branches | Completed |
 | 05 | Merging & Merge Conflicts | Pending |
 | 06 | Professional Git Workflow | Pending |
 | 07 | Git Revision + Mini Project | Pending |
@@ -44,7 +44,7 @@ git-github-practice/
 |
 |-- README.md
 |
-|-- Day-01/
+|-- Day-01/                
 |   |-- README.md
 |   |-- git-basics.txt
 |
