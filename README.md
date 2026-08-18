@@ -21,7 +21,7 @@ This repository documents the concepts, commands, experiments, and progress comp
 | 02 | Git History & Diff | Completed |
 | 03 | Undoing Changes | Completed |
 | 04 | Git Branches | Completed |
-| 05 | Merging & Merge Conflicts | Pending |
+| 05 | Merging & Merge Conflicts | Completed |
 | 06 | Professional Git Workflow | Pending |
 | 07 | Git Revision + Mini Project | Pending |
 | 08 | GitHub Fundamentals | Pending |
