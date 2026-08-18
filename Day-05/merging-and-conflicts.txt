@@ -1,4 +1,32 @@
+DAY 05 - MERGING & MERGE CONFLICTS
 
+1. What git merge does:
+Git merge is used to combine the changes from one branch into another branch. Today, I merged my feature-day05 branch into the main branch.
 
+2. What a merge conflict is and why it happens:
+A merge conflict happens when Git finds different changes in the same part of a file and cannot decide which one to keep. In my case, both main and feature-day05 changed the same line in the same file.
 
-This line was added on the feature-day05 branch and at main.
+3. What the conflict markers looked like:
+Git showed the conflict like this:
+<<<<<<< HEAD
+Change from the main branch
+=======
+Change from the feature-day05 branch
+>>>>>>> feature-day05
+<<<<<<< HEAD showed the change from my current branch (main). The ======= line separated the two changes, and >>>>>>> feature-day05 showed the change from the feature branch.
+
+4. How I resolved the conflict:
+I opened the file and removed the conflict markers. I then combined the changes from both branches into one final line. After that, I staged the file and committed the merge to complete the process.
+
+5. Commands practiced today:
+git switch -c feature-day05
+git branch
+git switch main
+git merge feature-day05
+git status
+git add
+git commit
+git push
+git log --oneline
+cat
+notepad
