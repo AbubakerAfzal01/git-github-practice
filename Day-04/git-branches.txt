@@ -1,0 +1,36 @@
+DAY 04 - GIT BRANCHES
+
+1. What a branch is:
+A branch is used to work on something separately without changing the main branch. I understood that I can create a new branch for a feature and do my work there.
+
+2. How I created a branch:
+First, I created a branch named feature-day04 using:
+git branch feature-day04
+After that, I switched to the branch using:
+git switch feature-day04
+
+3. How I switched between branches:
+I used git switch to move from one branch to another.
+git switch main
+git switch feature-day04
+
+4. What I observed when I switched branches (the test file experiment):
+I created a file named branch-test.txt on the feature-day04 branch.
+When I switched to main, the file was not there. When I switched back to feature-day04, the file appeared again.
+This showed me that files and changes can be different on different branches.
+
+5. Commands practiced today:
+mkdir Day-04
+touch README.md
+touch git-branches.txt
+git branch
+git branch feature-day04
+git switch feature-day04
+git switch main
+git status
+git add
+git commit
+git push
+ls
+cd ..
+EOF
