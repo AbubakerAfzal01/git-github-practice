@@ -1,0 +1,44 @@
+DAY 07 - GIT REVISION + MINI PROJECT
+
+1. What this mini project involved:
+This mini project was mainly a revision of the Git concepts I have learned so far. I created a small practice repository and worked with files, folders, .gitignore, commits, branches, and merging. It helped me practice the complete Git workflow instead of only using individual commands.
+
+2. What I did step by step:
+- Created a new practice-git folder on my desktop.
+- Initialized it as a Git repository using git init.
+- Created folders, a README file, and a test secret file.
+- Added the secret file to .gitignore and checked the result with git status.
+- Added and committed the README file.
+- Created files inside folder-01 and folder-02 and committed them.
+- Created a new feature-update branch.
+- Added a new line to README.md on the feature branch.
+- Committed the change and checked the commit history.
+- Switched back to main and merged the feature-update branch.
+- Observed that Git completed the merge with a fast-forward.
+- Created the Day-07 folder in my main git-github-practice repository.
+- Added the Day-07 files, committed them, pushed them to GitHub, and checked the final status.
+
+3. A mistake I made and fixed (the .gitignore filename mismatch):
+I made a small mistake while practicing .gitignore. The filename written in .gitignore did not initially match the actual test file name. Because of this, Git did not ignore the file as expected. I fixed the filename so it matched the .gitignore entry and then checked git status again to make sure the file was being ignored.
+
+4. What I observed about fast-forward merge (no conflict this time):
+When I merged feature-update into main, Git performed a fast-forward merge. There was no conflict because main had not received any new commits after the feature branch was created. Git simply moved the main branch pointer forward to the latest commit from feature-update.
+
+5. Commands practiced today:
+git init
+git status
+ls
+mkdir
+touch
+echo
+cat
+cd
+cd ..
+git add
+git commit -m
+git switch -c
+git switch
+git merge
+git log --oneline
+git push
+rm
