@@ -1,0 +1,31 @@
+DAY 06 - PROFESSIONAL GIT WORKFLOW
+
+1. What .gitignore does:
+.gitignore tells Git which files or folders should be ignored and not tracked. It is useful for keeping temporary, private, or unnecessary files out of the repository.
+
+2. What I tried with .gitignore today:
+I created a test file called secret-text.txt and checked its status with Git. After that, I created a .gitignore file and added secret-text.txt to it. Git then stopped showing the file as an untracked file, even though the file was still present on my computer.
+
+3. Difference between selective staging and git add .:
+Selective staging means adding only the files or folders I want to include in a commit. For example, I used git add Day-06/ to stage only the Day-06 files.
+git add . stages all eligible changes in the current directory. Selective staging gives me more control over what goes into each commit.
+
+4. What I observed today (the random-test.txt experiment):
+I created random-test.txt in the main repository folder. Git showed it as an untracked file. When I used git add Day-06/, the random-test.txt file was not staged because I had only selected the Day-06 folder.
+This helped me understand that Git only commits what I intentionally stage. After finishing the practice, I removed the temporary file and checked git status again. The working tree was clean.
+
+5. Commands practiced today:
+mkdir Day-06
+cd
+cd ..
+ls
+pwd
+touch
+echo
+git status
+git add .gitignore
+git add Day-06/
+git add .
+git commit -m
+git push
+rm
