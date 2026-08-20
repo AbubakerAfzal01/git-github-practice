@@ -1,0 +1,50 @@
+DAY 10 - CLONE, FORK & COLLABORATION
+
+1. What git clone does:
+git clone downloads a complete copy of a GitHub repository to my computer. It creates a local folder containing the project files and Git history. It also connects my local repository with the remote repository.
+
+2. What a fork is, and how I discovered it (the edit attempt on octocat/Hello-World):
+A fork is my own copy of another person's GitHub repository under my GitHub account.
+I understood the purpose of a fork when I tried to edit the octocat/Hello-World repository. Since I did not own the repository and did not have direct write access, I needed to work with my own fork instead.
+
+3. What happened when I tried to edit a file I didn't have write access to:
+When I tried to edit a file directly in the repository, I found that I did not have permission to make changes to it.
+This helped me understand why forks are useful. I can fork someone else's repository, make changes in my own copy, and then contribute those changes without needing direct access to the original repository.
+
+4. What I did with git clone on my own fork:
+I cloned my own Hello-World repository to my Desktop using git clone.
+After cloning it, I entered the Hello-World folder and checked the repository history, remote connection, and README file.
+
+5. What a remote-tracking branch is (git branch -a, and switching to patch-1):
+A remote-tracking branch is a reference to a branch that exists on a remote repository.
+When I ran git branch -a, I saw several branches, including:
+master
+origin/master
+origin/octocat-patch-1
+origin/patch-1
+origin/test
+I then used git switch patch-1. Git created a local patch-1 branch and connected it to origin/patch-1.
+After switching to patch-1, I checked the README file and saw:
+Hello World!
+Hello, Abubaker.
+This helped me understand how remote branches can be viewed and then worked with locally.
+
+6. Commands practiced today:
+cd ~/desktop
+git clone https://github.com/AbubakerAfzal01/Hello-World.git
+cd Hello-World
+git log --oneline
+git remote -v
+cat README
+git branch -a
+git switch patch-1
+cd ~/desktop/git-github-practice
+mkdir Day-10
+cd Day-10
+touch clone-fork-collaboration.txt
+touch README.md
+cd ..
+git add Day-10/
+git status
+git commit -m "Add Day 10 folder structure"
+git push
