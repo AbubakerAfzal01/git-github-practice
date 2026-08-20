@@ -26,14 +26,14 @@ This repository documents the concepts, commands, experiments, and progress comp
 | 07 | Git Revision + Mini Project | Completed |
 | 08 | GitHub Fundamentals | Completed |
 | 09 | Git + GitHub Connection | Completed |
-| 10 | Clone, Fork & Collaboration | Pending |
+| 10 | Clone, Fork & Collaboration | Completed |
 | 11 | GitHub Branches & Pull Requests | Pending |
 | 12 | Issues + README + Professional Repository | Pending |
 | 13 | GitHub Professional Features | Pending |
 | 14 | Professional GitHub Workflow | Pending |
 | 15 | Final Project + Assessment | Pending |
 
-Current Progress: 9 / 15 days completed
+Current Progress: 10 / 15 days completed
 
 ## Repository Structure
 
