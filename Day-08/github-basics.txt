@@ -1,0 +1,32 @@
+DAY 08 - GITHUB FUNDAMENTALS
+
+1. What GitHub is:
+GitHub is an online platform where I can store my Git repositories, track my project history, and share my code. It also helps me work with branches, commits, issues, and other collaboration features.
+
+2. What I saw in the Commits tab:
+I saw the commit history of my repository. Each commit showed a commit message, commit ID, author, date, and the changes made in that commit. I also understood that every change I push to GitHub becomes part of the repository history.
+
+3. What I saw in the Branches tab (important observation):
+I only saw the main branch on GitHub. My local feature-day04 branch did not appear here, because I had never pushed it to GitHub. This helped me understand that GitHub only shows branches that have been explicitly pushed - a local branch and a remote (GitHub) repository are not automatically the same.
+
+4. What I saw in the Issues tab:
+I learned that Issues are used to report bugs, suggest improvements, ask questions, and keep track of tasks in a GitHub repository.
+
+5. Commands/things practiced today:
+- cd desktop
+- cd git-github-practice
+- mkdir Day-08
+- cd Day-08
+- touch github-basics.txt
+- touch README.md
+- ls
+- cd ..
+- git status
+- git add Day-08/
+- git commit -m "add Day-08 folder structure"
+- git push
+- git show
+- git log --oneline
+- git branch
+
+I also practiced checking branches and noticed that git branches and git brach were incorrect commands. The correct command is git branch. I also learned that switch feature-day04 does not work by itself; the correct command is git switch feature-day04.
