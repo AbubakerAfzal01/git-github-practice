@@ -1,0 +1,43 @@
+DAY 09 - GIT + GITHUB CONNECTION
+
+1. What a remote is:
+A remote is basically a connection between my local Git repository on my computer and an online repository, such as GitHub. It helps me send my local changes to GitHub and also get changes from the remote repository.
+
+2. What "origin" means:
+"origin" is the default name usually given to a remote repository. In my case, origin is connected to my GitHub repository:
+https://github.com/AbubakerAfzal01/git-github-practice.git
+
+3. What I saw with git remote -v:
+When I ran git remote -v, I saw that my repository has one remote named "origin". The same GitHub repository URL was shown for both fetch and push operations.
+This confirmed that my local Git repository is properly connected to GitHub.
+
+4. What upstream tracking is (what git branch -vv showed):
+Upstream tracking means that a local branch is connected to a specific remote branch.
+When I ran git branch -vv, I saw that my local main branch is tracking origin/main. This means Git knows which remote branch my main branch is connected to.
+I also saw that my main branch was up to date with origin/main.
+
+5. Difference between git fetch and git pull:
+git fetch downloads the latest information and changes from the remote repository, but it does not automatically merge those changes into my current branch.
+git pull also gets the latest changes from the remote repository, but it automatically integrates them into my current branch.
+In simple words:
+git fetch = Check and download remote changes without changing my current branch.
+git pull = Download remote changes and update my current branch.
+
+6. Commands practiced today:
+cd desktop
+cd git-github-practice
+git log --oneline
+git remote -v
+git branch -vv
+git fetch
+git status
+mkdir Day-09
+cd Day-09
+touch git-github-connection.txt
+touch README.md
+cd ..
+ls
+git add Day-09/
+git status
+git commit -m "Add Day 09 folder structure"
+git push
