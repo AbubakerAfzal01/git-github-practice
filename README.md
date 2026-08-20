@@ -24,7 +24,7 @@ This repository documents the concepts, commands, experiments, and progress comp
 | 05 | Merging & Merge Conflicts | Completed |
 | 06 | Professional Git Workflow | Completed |
 | 07 | Git Revision + Mini Project | Completed |
-| 08 | GitHub Fundamentals | Pending |
+| 08 | GitHub Fundamentals | Completed |
 | 09 | Git + GitHub Connection | Pending |
 | 10 | Clone, Fork & Collaboration | Pending |
 | 11 | GitHub Branches & Pull Requests | Pending |
@@ -75,6 +75,7 @@ git-github-practice/
 |-- Day-08/
 |   |-- README.md
 |   |-- github-basics.txt
+|   |-- screenshots
 |
 |-- Day-09/
 |   |-- README.md
