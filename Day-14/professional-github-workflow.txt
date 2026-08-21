@@ -1,0 +1,35 @@
+DAY 14 - PROFESSIONAL GITHUB WORKFLOW
+
+1. The full workflow I performed, step by step:
+First, I created a new branch called update-root-readme from main. I updated the root README file, committed the changes, and pushed the branch to GitHub. GitHub then provided the option to create a Pull Request. After the Pull Request was completed and merged, I switched back to main, pulled the latest changes, and deleted the local update-root-readme branch. After that, I created the Day-14 folder, added the required files, committed them, and pushed everything to GitHub.
+
+2. What the "checks" section showed during the PR (the Actions workflow running):
+The GitHub Actions workflow ran automatically when the changes were pushed. The checks showed that the workflow completed successfully, confirming that the automated check passed.
+
+3. Why deleting the branch after merging matters:
+Once a feature branch has been merged, it is usually no longer needed. Deleting it keeps the repository clean and avoids having lots of old branches that are no longer being used. If needed, a new branch can always be created later.
+
+4. How this workflow is different from just using git merge locally:
+With a local git merge, I can merge changes directly on my computer. The professional GitHub workflow adds more steps, such as using a feature branch, pushing it to GitHub, creating a Pull Request, running automated checks, reviewing the changes, merging through GitHub, and then cleaning up the branch. This makes the process more organized and suitable for team development.
+
+5. Commands/actions practiced today:
+git switch -c update-root-readme
+notepad README.md
+git add README.md
+git status
+git commit -m "Update progress to Day 14"
+git push -u origin update-root-readme
+git switch main
+git pull
+git branch -d update-root-readme
+git branch
+mkdir Day-14
+cd Day-14
+touch professional-github-workflow.txt
+touch README.md
+cd ..
+git add Day-14/
+git status
+git commit -m "Add Day 14 folder structure"
+git push
+Also practiced creating a feature branch, updating a README, pushing a branch to GitHub, working with a Pull Request, checking GitHub Actions, merging changes, syncing main, and deleting the completed feature branch.
