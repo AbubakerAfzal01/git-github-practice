@@ -1,0 +1,35 @@
+DAY 13 - GITHUB PROFESSIONAL FEATURES
+
+1. What a Git tag is, and what I did:
+A Git tag is basically a name or version given to a specific commit. Today I created a tag called v1.0 for my Day 1-12 progress and pushed it to GitHub.
+
+2. What a GitHub Release is, and how it's different from a tag:
+A GitHub Release is a proper published version of the project based on a tag. The tag points to a specific commit, while the Release gives that version a title, description, changelog, and downloadable files. I created and published the v1.0 Release on GitHub.
+
+3. What GitHub Actions is (basic concept):
+GitHub Actions is used to automate tasks in a GitHub repository. It can automatically run something when an event happens, such as pushing new changes. The automation is written in YAML workflow files.
+
+4. What my hello.yml workflow does:
+My hello.yml workflow runs whenever I push something to the repository. It uses an Ubuntu environment and runs a simple command that prints "Hello from GitHub Actions!".
+
+5. What I saw when the workflow ran successfully:
+I checked the Actions tab on GitHub and saw that the Hello World workflow ran successfully. The successful status showed that GitHub detected my workflow and executed it after my push.
+
+6. Commands/actions practiced today:
+git tag -a v1.0 -m "Completed Day 1-12 of the Git and GitHub course"
+git push origin v1.0
+git tag
+mkdir Day-13
+touch github-professional-features.txt
+touch README.md
+git add Day-13/
+git status
+git commit -m "Add Day 13 folder structure"
+git push
+mkdir -p .github/workflows
+cat > hello.yml
+cat hello.yml
+git add .github/
+git commit -m "Add simple GitHub Actions workflow"
+git push
+Also practiced creating a GitHub Release and checking the GitHub Actions workflow from the Actions tab.
