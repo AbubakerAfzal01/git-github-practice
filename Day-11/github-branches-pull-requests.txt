@@ -1,0 +1,37 @@
+DAY 11 - GITHUB BRANCHES & PULL REQUESTS
+
+1. What a Pull Request is:
+A Pull Request is basically a request to add my changes into another branch or repository. It allows the owner or team members to review my changes before they are merged.
+
+2. Difference between git merge and a Pull Request:
+git merge is a Git command that combines changes from two branches. A Pull Request is a GitHub feature where I ask someone to review and merge my changes.
+In simple words, merge combines the changes, while a Pull Request asks for permission to add those changes.
+
+3. What happened when I created a PR on someone else's repo (shabanshoukat6-arch/mypractice):
+I created a fork of the repository, made a new branch called patch-1, and made some changes. Then I created a Pull Request from my fork to the main branch of shabanshoukat6-arch/mypractice.
+GitHub showed that the PR could be merged without any conflicts.
+
+4. Why I decided to close that PR instead of merging it:
+I decided to close the PR because it was someone else's repository. I was only using it for practice, and I did not want to add unrelated changes to their project or disturb their repository.
+Closing the PR was the safer and more professional choice.
+
+5. Who has merge access on a repository:
+Normally, the repository owner has merge access. Other collaborators or team members can also merge PRs if they have the required permissions.
+In my own repository, I have merge access because I am the owner.
+
+6. Commands/actions practiced today:
+- git log --oneline
+- git pull
+- git add Day-11/
+- git status
+- git commit -m "Add Day 11 folder structure"
+- git push
+- Created the Day-11 folder
+- Created README.md
+- Created github-branches-pull-requests.txt
+- Created a fork for PR practice
+- Created the patch-1 branch
+- Created a Pull Request
+- Checked the "Able to merge" message
+- Reviewed the PR details
+- Closed the Pull Request without merging
