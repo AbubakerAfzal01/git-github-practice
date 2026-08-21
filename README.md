@@ -29,11 +29,11 @@ This repository documents the concepts, commands, experiments, and progress comp
 | 10 | Clone, Fork & Collaboration | Completed |
 | 11 | GitHub Branches & Pull Requests | Completed |
 | 12 | Issues + README + Professional Repository | Completed |
-| 13 | GitHub Professional Features | Pending |
+| 13 | GitHub Professional Features | Completed |
 | 14 | Professional GitHub Workflow | Pending |
 | 15 | Final Project + Assessment | Pending |
 
-Current Progress: 12 / 15 days completed
+Current Progress: 13 / 15 days completed
 
 ## Repository Structure
 
