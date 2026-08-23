@@ -1,0 +1,28 @@
+DAY 15 - FINAL PROJECT + ASSESSMENT
+
+1. Git concepts I learned (Day 1-7):
+During Days 1-7, I learned the basic and practical concepts of Git. I learned how to initialize a repository, create files, check the status of my working directory, stage files, make commits, and view commit history. I also learned how branches work and how to switch between branches. I practiced modifying files, staging changes, committing them, and understanding how Git tracks different versions of my project.
+I also learned that Git is a version control system that works locally on my computer. It helps me keep track of changes and allows me to safely return to previous versions when needed.
+
+2. GitHub concepts I learned (Day 8-14):
+During Days 8-14, I learned how Git and GitHub work together. I learned about repositories, remotes, origin, pushing and pulling changes, and upstream tracking. I practiced connecting my local Git repository with GitHub and sending my commits to the remote repository.
+I also learned about cloning, forking, remote-tracking branches, Issues, README files, Pull Requests, and GitHub Actions. I practiced a professional workflow where I created a branch, made changes, pushed the branch to GitHub, created a Pull Request, checked the Actions workflow, merged the Pull Request, and deleted the branch after merging.
+This helped me understand that GitHub is not just a place to upload code. It provides tools for collaboration, project management, code review, and automated workflows.
+
+3. The most challenging thing I learned:
+The most challenging part for me was understanding how Git and GitHub work together, especially remotes, branches, upstream tracking, Pull Requests, and the difference between local Git operations and GitHub workflows.
+At the beginning, many commands and concepts felt confusing because I was learning them both theoretically and practically. After repeatedly using the commands in my own repository, they became much easier to understand.
+
+4. The most useful thing I learned:
+The most useful thing I learned was the complete GitHub workflow. I learned how to work on a separate branch, make commits, push changes, create a Pull Request, review the changes, check GitHub Actions, merge the Pull Request, and clean up the branch.
+This feels much more useful than only knowing basic Git commands because it represents how Git and GitHub can be used in real development projects and team environments.
+
+5. What I would do differently if I started this course again:
+If I started this course again, I would spend more time understanding each concept before memorizing commands. I would also practice the same workflow multiple times instead of doing it only once.
+I would keep better notes from the beginning and record not only the commands I used but also why I used each command and what happened after running it. I would also try more small experiments with branches, merges, Pull Requests, and GitHub Actions to understand how they behave in different situations.
+
+6. Overall summary:
+This 15-day Git and GitHub practical course helped me go from being confused about Git and GitHub to understanding and using them in a practical way.
+I started with basic Git concepts such as repositories, commits, staging, and history. Then I moved toward GitHub concepts such as remotes, pushing, pulling, cloning, forking, Issues, Pull Requests, and GitHub Actions.
+The biggest improvement was that I did not only learn the commands theoretically. I actually practiced them in my own GitHub repository and documented my progress day by day.
+This course gave me a strong foundation for using Git and GitHub in future programming projects, internships, and team-based development. I still have more advanced Git and GitHub topics to learn, but now I understand the basic workflow and feel much more confident using these tools.
