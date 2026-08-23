@@ -3,7 +3,9 @@
 
 A 15-day hands-on course focused on learning Git and GitHub through practical, command-line-based exercises and real repository workflows.
 
-This repository documents the concepts, commands, experiments, and progress completed throughout the course. Each day's work is practiced locally, documented, committed, and pushed to GitHub.
+This repository documents the concepts, commands, experiments, and progress completed throughout the course. Each day's work was practiced locally, documented, committed, and pushed to GitHub.
+
+Status: Course Complete - 15/15 days
 
 ## Course Structure
 
@@ -31,20 +33,31 @@ This repository documents the concepts, commands, experiments, and progress comp
 | 12 | Issues + README + Professional Repository | Completed |
 | 13 | GitHub Professional Features | Completed |
 | 14 | Professional GitHub Workflow | Completed |
-| 15 | Final Project + Assessment | Pending |
+| 15 | Final Project + Assessment | Completed |
 
-Current Progress: 14 / 15 days completed
+Current Progress: 15 / 15 days completed
+
+## What I Can Now Do
+
+- Initialize, track, and manage a Git repository from scratch
+- Write clean, meaningful commits using selective staging
+- Create and merge branches, including resolving a real merge conflict
+- Connect a local repository to GitHub and understand remotes, fetch, and pull
+- Fork and clone repositories, and understand remote-tracking branches
+- Open, review, and merge Pull Requests - including handling GitHub Actions checks
+- Use Issues to track real tasks from open to close
+- Tag releases and write release notes
+- Set up a basic GitHub Actions workflow
+- Follow the full professional workflow: branch, commit, push, PR, review, merge, cleanup
 
 ## Repository Structure
-
-Planned final structure of this repository once all 15 days are complete:
 
 ```text
 git-github-practice/
 |
 |-- README.md
 |
-|-- Day-01/                
+|-- Day-01/
 |   |-- README.md
 |   |-- git-basics.txt
 |
@@ -75,7 +88,7 @@ git-github-practice/
 |-- Day-08/
 |   |-- README.md
 |   |-- github-basics.txt
-|   |-- screenshots
+|   |-- screenshots/
 |
 |-- Day-09/
 |   |-- README.md
@@ -106,16 +119,16 @@ git-github-practice/
     |-- final-project.txt
 ```
 
-Each completed day includes:
+Each day's folder includes:
 - A README.md containing a concise summary of the day's work
-- A .txt file containing detailed notes and commands
-- Practical examples and experiments performed during the lesson
+- A .txt file containing detailed notes, commands, and real examples
+- Practical exercises actually performed during that day, not just theory
 
 ## Learning Workflow
 
 Learn -> Practice -> Document -> Commit -> Push
 
-Each topic is practiced directly in Git Bash before being documented and added to the repository.
+Every topic was practiced directly in Git Bash and on GitHub before being documented and added to this repository.
 
 ## Tools
 
@@ -124,7 +137,10 @@ Each topic is practiced directly in Git Bash before being documented and added t
 - GitHub
 - Visual Studio Code
 - Markdown
+- GitHub Actions
 
 ## About
 
-I am a Computer Science student and aspiring Full-Stack Developer, currently building strong foundations in modern development tools and workflows. This repository is part of that ongoing learning journey - every completed section is backed by real, hands-on Git commits rather than theory alone.
+I am a Computer Science student and aspiring Full-Stack Developer. This repository documents a 15-day, self-directed course through which I built a practical, hands-on foundation in Git and GitHub - version control, branching, merging, remote collaboration, Pull Requests, Issues, and automation with GitHub Actions.
+
+Every completed section here is backed by real Git commits, not just notes - version v1.0 marks the halfway point (Day 12), and this README marks the full completion of the course.
