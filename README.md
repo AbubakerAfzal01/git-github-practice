@@ -115,8 +115,13 @@ git-github-practice/
 |   |-- professional-github-workflow.txt
 |
 |-- Day-15/
-    |-- README.md
-    |-- final-project.txt
+|   |-- README.md
+|   |-- final-project.txt
+|
+|-- Day-16/ 
+|   |-- html-css-practice
+|   |-- README.md
+
 ```
 
 Each day's folder includes:
